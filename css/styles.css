@@ -141,11 +141,12 @@ h1 {
   background: #EFEFEF;
 }
 
-/*
 .active-details,
 .hover-details {
   padding: 8px 6px;
 }
+
+/*
 .toggle:focus {
   box-shadow: inset 0 0 2px 0 #3AF;
 }
