@@ -1,4 +1,4 @@
-body {
+/*body {
   text-align: center;
   font-family: courier;
   background-image: url("../assets/image.jpeg");
@@ -106,6 +106,129 @@ body {
 .share-button:hover .share__link:nth-of-type(4) {
   transition-delay: 0.4s;
 }
+
+body {
+  background: #3F3F3F;
+  margin: 0;
+}
+main {
+  background: #EFEFEF;
+  margin: 2em auto;
+  max-width: 1024px;
+}
+header {
+  padding: 2px 16px;
+}
+h1 {
+  font-size: 1.5em;
+}
+.code {
+  font-family: monospace;
+}
+.emoticon {
+  font-family: sans-serif;
+}
+
+.details {
+  border-color: #DFDFDF #AFAFAF #AFAFAF #DFDFDF;
+  border-style: solid;
+  border-width: 1px 2px 2px 1px;
+  padding: 8px 6px;
+}
+.details:nth-child(2n) {
+  background: #FFFFFF;
+}
+.details:nth-child(2n + 1) {
+  background: #EFEFEF;
+}
+.active-details,
+.hover-details {
+  padding: 8px 6px;
+}
+.toggle:focus {
+  box-shadow: inset 0 0 2px 0 #3AF;
+}
+input[type="checkbox"] {
+  position: absolute !important;
+  display: block !important;
+  overflow: hidden !important;
+  clip: rect(0,0,0,0) !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  height: 1px !important;
+  width: 1px !important;
+  top: 0 !important;
+  left: -999em !important;
+}
+.toggle {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  font-size: 1.0625em;
+  font-weight: bold;
+  padding: 4px 8px 4px 24px;
+  margin: 0;
+  z-index: 1;
+}
+.toggle:before {
+  content: "";
+  position: absolute;
+  border-color: transparent transparent transparent #333;
+  border-style: solid;
+  border-width: 5px 8px;
+  margin-top: -8px;
+  top: 50%;
+  left: 8px;
+  transform-origin: 25% 50%;
+  transition: transform 200ms;
+}
+input[type="checkbox"]:checked + .toggle:before {
+  transform: rotate(90deg);
+}
+
+.content,
+.active-content,
+.hover-content {
+  display: none;
+  padding: 0 16px;
+}
+input[type="checkbox"]:checked + .toggle + .content,
+.active-details:active .active-content,
+.hover-details:hover .hover-content {
+  display: block;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  background: #332;
+  color: #F8FFFF;
+  padding: 6px 12px 12px;
+}
+
+.red     { color: #F37; }
+.orange  { color: #FA3; }
+.yellow  { color: #FF7; }
+.green   { color: #AE4; }
+.cyan    { color: #8DF; }
+.blue    { color: #48F; }
+.purple  { color: #C7F; }
+.gray    { color: #999; }
+
+.preview {
+  border: 4px inset #C73;
+}
+.preview .details,
+.preview .active-details,
+.preview .hover-details {
+  background: #CEF;
+  border: 0;
+}
+.score {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
 
 #contact h1 {
   font-family: helvetica;
