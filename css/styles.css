@@ -118,10 +118,11 @@ h1 {
   font-size: 1.5em;
 }
 
-/*.code {
+.code {
   font-family: monospace;
 }
-.emoticon {
+
+/*.emoticon {
   font-family: sans-serif;
 }
 
