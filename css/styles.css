@@ -212,8 +212,11 @@ pre {
   padding: 6px 12px 12px;
 }
 
+.red {
+  color: #F37;
+}
+
 /*
-.red     { color: #F37; }
 .orange  { color: #FA3; }
 .yellow  { color: #FF7; }
 .green   { color: #AE4; }
