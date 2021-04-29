@@ -220,8 +220,11 @@ pre {
   color: #FA3;
 }
 
+.yellow {
+  color: #FF7;
+}
+
 /*
-.yellow  { color: #FF7; }
 .green   { color: #AE4; }
 .cyan    { color: #8DF; }
 .blue    { color: #48F; }
