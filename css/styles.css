@@ -248,13 +248,14 @@ pre {
   border: 4px inset #C73;
 }
 
-/*
 .preview .details,
 .preview .active-details,
 .preview .hover-details {
   background: #CEF;
   border: 0;
 }
+
+/*
 .score {
   font-family: sans-serif;
   font-weight: bold;
