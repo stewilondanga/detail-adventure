@@ -224,8 +224,11 @@ pre {
   color: #FF7;
 }
 
+.green {
+  color: #AE4;
+}
+
 /*
-.green   { color: #AE4; }
 .cyan    { color: #8DF; }
 .blue    { color: #48F; }
 .purple  { color: #C7F; }
