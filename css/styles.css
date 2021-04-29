@@ -122,10 +122,11 @@ h1 {
   font-family: monospace;
 }
 
-/*.emoticon {
+.emoticon {
   font-family: sans-serif;
 }
 
+/*
 .details {
   border-color: #DFDFDF #AFAFAF #AFAFAF #DFDFDF;
   border-style: solid;
