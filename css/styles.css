@@ -228,8 +228,11 @@ pre {
   color: #AE4;
 }
 
+.cyan {
+  color: #8DF;
+}
+
 /*
-.cyan    { color: #8DF; }
 .blue    { color: #48F; }
 .purple  { color: #C7F; }
 .gray    { color: #999; }
