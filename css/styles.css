@@ -133,9 +133,11 @@ h1 {
   padding: 8px 6px;
 }
 
-/*.details:nth-child(2n) {
+.details:nth-child(2n) {
   background: #FFFFFF;
 }
+
+/*
 .details:nth-child(2n + 1) {
   background: #EFEFEF;
 }
