@@ -204,7 +204,6 @@ input[type="checkbox"]:checked+.toggle+.content,
   display: block;
 }
 
-/*
 pre {
   white-space: pre-wrap;
   word-wrap: break-word;
@@ -213,6 +212,7 @@ pre {
   padding: 6px 12px 12px;
 }
 
+/*
 .red     { color: #F37; }
 .orange  { color: #FA3; }
 .yellow  { color: #FF7; }
