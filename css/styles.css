@@ -104,13 +104,13 @@ body {
   transition-delay: 0.4s;
 }
 
-/*
 main {
   background: #EFEFEF;
   margin: 2em auto;
   max-width: 1024px;
 }
-header {
+
+/*header {
   padding: 2px 16px;
 }
 h1 {
