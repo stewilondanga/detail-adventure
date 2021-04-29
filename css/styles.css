@@ -137,10 +137,11 @@ h1 {
   background: #FFFFFF;
 }
 
-/*
 .details:nth-child(2n + 1) {
   background: #EFEFEF;
 }
+
+/*
 .active-details,
 .hover-details {
   padding: 8px 6px;
