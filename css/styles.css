@@ -187,10 +187,11 @@ input[type="checkbox"] {
   transition: transform 200ms;
 }
 
-/*
-input[type="checkbox"]:checked + .toggle:before {
+input[type="checkbox"]:checked+.toggle:before {
   transform: rotate(90deg);
 }
+
+/*
 
 .content,
 .active-content,
