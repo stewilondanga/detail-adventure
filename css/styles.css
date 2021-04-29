@@ -191,14 +191,14 @@ input[type="checkbox"]:checked+.toggle:before {
   transform: rotate(90deg);
 }
 
-/*
-
 .content,
 .active-content,
 .hover-content {
   display: none;
   padding: 0 16px;
 }
+
+/*
 input[type="checkbox"]:checked + .toggle + .content,
 .active-details:active .active-content,
 .hover-details:hover .hover-content {
