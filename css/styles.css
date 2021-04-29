@@ -240,9 +240,11 @@ pre {
   color: #C7F;
 }
 
-/*
-.gray    { color: #999; }
+.gray {
+  color: #999;
+}
 
+/*
 .preview {
   border: 4px inset #C73;
 }
