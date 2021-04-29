@@ -236,8 +236,11 @@ pre {
   color: #48F;
 }
 
+.purple {
+  color: #C7F;
+}
+
 /*
-.purple  { color: #C7F; }
 .gray    { color: #999; }
 
 .preview {
