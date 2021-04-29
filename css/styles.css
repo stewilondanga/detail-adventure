@@ -163,7 +163,6 @@ input[type="checkbox"] {
   left: -999em !important;
 }
 
-/*
 .toggle {
   cursor: pointer;
   display: block;
@@ -174,6 +173,8 @@ input[type="checkbox"] {
   margin: 0;
   z-index: 1;
 }
+
+/*
 .toggle:before {
   content: "";
   position: absolute;
