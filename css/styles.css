@@ -198,13 +198,13 @@ input[type="checkbox"]:checked+.toggle:before {
   padding: 0 16px;
 }
 
-/*
-input[type="checkbox"]:checked + .toggle + .content,
+input[type="checkbox"]:checked+.toggle+.content,
 .active-details:active .active-content,
 .hover-details:hover .hover-content {
   display: block;
 }
 
+/*
 pre {
   white-space: pre-wrap;
   word-wrap: break-word;
