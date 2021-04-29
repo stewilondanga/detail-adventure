@@ -59,6 +59,223 @@
     </div>
   </div>
 
+  <main>
+    <header>
+      <h1>Choose Your Adventure:</h1>
+      <p>
+        How will you implement <span class="code">&lt;details&gt;</span> and <span class="code">&lt;summary&gt;</span> tags? (Based on my experience building this solution.)
+      </p>
+    </header>
+
+    <article class="details">
+      <input id="begin" type="checkbox"/>
+      <label for="begin" class="toggle">Begin</label>
+      <div class="content">
+        <p>
+          The <span class="code">&lt;details&gt;</span> and <span class="code">&lt;summary&gt;</span> tags are a handy way to collapse content without the need for CSS rules or JavaScript. However, not all browsers support this feature, namely Edge. How will you start?
+        </p>
+
+        <article class="details">
+          <input id="just-tags" type="checkbox"/>
+          <label for="just-tags" class="toggle">Just use the <span class="code">&lt;details&gt;</span> and <span class="code">&lt;summary&gt;</span> tags</label>
+          <div class="content">
+            <p>
+              How will you nest the tags?
+            </p>
+
+            <article class="details">
+              <input id="summary-details" type="checkbox"/>
+              <label for="summary-details" class="toggle">details in summary</label>
+              <div class="content">
+                <p>
+                  Nope <span class="emoticon">:|</span>
+                </p>
+                <pre>
+  &lt;<span class="red">summary</span>&gt;
+    &lt;<span class="red">details</span>&gt;Show Content&lt;/<span class="red">details</span>&gt;
+    &lt;<span class="red">p</span>&gt;
+      Content
+    &lt;/<span class="red">p</span>&gt;
+  &lt;/<span class="red">summary</span>&gt;
+                </pre>
+                <div class="preview">
+                  <article class="details">
+                    <input id="summary-details-preview" type="checkbox"/>
+                    <label for="summary-details-preview" class="toggle">Details</label>
+                    <div class="content">Content</div>
+                  </article>
+                </div>
+                <p>
+                  Your Score: <span class="score">0/100</span>
+                </p>
+              </div>
+            </article>
+
+            <article class="details">
+              <input id="details-summary" type="checkbox"/>
+              <label for="details-summary" class="toggle">summary in details</label>
+              <div class="content">
+                <p>
+                  Great! You've implemented the <span class="code">&lt;details&gt;</span> and <span class="code">&lt;summary&gt;</span> tags on your webpage. It won't work for every user, but who wants to support Edge anyway, right? Hmm...
+                </p>
+                <pre>
+  &lt;<span class="red">details</span>&gt;
+    &lt;<span class="red">summary</span>&gt;Show Content&lt;/<span class="red">summary</span>&gt;
+    &lt;<span class="red">p</span>&gt;
+      Content
+    &lt;/<span class="red">p</span>&gt;
+  &lt;/<span class="red">details</span>&gt;
+                </pre>
+                <div class="preview">
+                  <article class="details">
+                    <input id="details-summary-preview" type="checkbox"/>
+                    <label for="details-summary-preview" class="toggle">Show Content</label>
+                    <div class="content">Content</div>
+                  </article>
+                </div>
+                <p>
+                  Your Score: <span class="score">65/100</span>
+                </p>
+              </div>
+            </article>
+          </div>
+        </article>
+
+        <article class="details">
+          <input id="use-javascript" type="checkbox"/>
+          <label for="use-javascript" class="toggle">Use JavaScript</label>
+          <div class="content">
+            <p>
+              Will you default to <span class="code">&lt;details&gt;</span> and <span class="code">&lt;summary&gt;</span> tags if the browser supports them, or only use JavaScript to simulate the tags?
+            </p>
+
+            <article class="details">
+              <input id="default-to-tags" type="checkbox"/>
+              <label for="default-to-tags" class="toggle">Default to tags</label>
+              <div class="content">
+                <p>
+                  How will you determine whether to use the tags or simulate them?
+                </p>
+
+                <article class="details">
+                  <input id="user-agent" type="checkbox"/>
+                  <label for="user-agent" class="toggle">Parse the User Agent string</label>
+                  <div class="content">
+                    <p>
+                      After a lot of troubleshooting, you've managed to do it! Of course, the User Agent string isn't very reliable, and as browsers release new versions, you'll need to update your script to ensure it keeps working. There's a better solution, give it another try! (Consider reading the MDN article on the subject as well: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Browser_detection_using_the_user_agent">Browser detection using the user agent</a>.)
+                    </p>
+                    <p>
+                      Your Score: <span class="score">70/100</span>
+                    </p>
+                  </div>
+                </article>
+
+                <article class="details">
+                  <input id="modernizr" type="checkbox"/>
+                  <label for="modernizr" class="toggle">Use Modernizr to detect browser by features</label>
+                  <div class="content">
+                    <p>
+                      It took a little research, but you found out how to detect whether the <span class="code">&lt;details&gt;</span> and <span class="code">&lt;summary&gt;</span> tags work by testing the functionality through Modernizr. If the feature isn't available, you just toggle the tags with some jQuery event listeners. Way to go! The only caveat is that your users need to have JavaScript enabled for this to work. Could there be a better way? (Check out this Stack Overflow post about how to do this solution <a href="https://stackoverflow.com/questions/13478303/correct-way-to-use-modernizr-to-detect-ie#13480430">Correct way to user Modernizr to detect IE</a>.)
+                    </p>
+                    <p>
+                      Your Score: <span class="score">90/100</span>
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </article>
+
+            <article class="details">
+              <input id="only-javascript" type="checkbox"/>
+              <label for="only-javascript" class="toggle">Only JavaScript</label>
+              <div class="content">
+                <p>
+                  This way is pretty sensible. A little Bootstrap will go a long way. Your users do need to have JavaScript available and enabled in their browser, though; could there be a more inclusive solution?
+                </p>
+                <pre>
+  &lt;<span class="red">div</span> <span class="green">class</span>=<span class="yellow">"btn btn-default"</span> <span class="green">data-toggle</span>=<span class="yellow">"collapse"</span> <span class="green">href</span>=<span class="yellow">"#details"</span>&gt;Show Content&lt;/<span class="red">div</span>&gt;
+  &lt;<span class="red">div</span> <span class="green">class</span>=<span class="yellow">"collapse"</span> <span class="green">id</span>=<span class="yellow">"details"</span>&gt;
+    &lt;<span class="red">p</span>&gt;
+      Content
+    &lt;/<span class="red">p</span>&gt;
+  &lt;/<span class="red">div</span>&gt;
+                </pre>
+                <p>
+                  Your Score: <span class="score">85/100</span>
+                </p>
+              </div>
+            </article>
+          </div>
+        </article>
+
+        <article class="details">
+          <input id="use-css" type="checkbox"/>
+          <label for="use-css" class="toggle">Use CSS</label>
+          <div class="content">
+            <p>
+              How will you keep track of whether the content of the details tag is visible or hidden?
+            </p>
+
+            <article class="details">
+              <input id="focus" type="checkbox"/>
+              <label for="focus" class="toggle"><span class="code">:focus</span> pseudoselector</label>
+              <div class="content">
+                <p>
+                  That'll work, but only while the mouse button is held down <span class="emoticon">:|</span>
+                </p>
+                <div class="preview">
+                  <article class="active-details">
+                    <label>Show Content</label>
+                    <p class="active-content">Content</p>
+                  </article>
+                </div>
+                <p>
+                  Your Score: <span class="score">0/100</span>
+                </p>
+              </div>
+            </article>
+
+            <article class="details">
+              <input id="hover" type="checkbox"/>
+              <label for="hover" class="toggle"><span class="code">:hover</span> pseudoselector</label>
+              <div class="content">
+                <p>
+                  That doesn't simulate the right functionality at all...
+                </p>
+                <div class="preview">
+                  <article class="hover-details">
+                    <label>Show Content</label>
+                    <p class="hover-content">Content</p>
+                  </article>
+                </div>
+                <p>
+                  Your Score: <span class="score">0/100</span>
+                </p>
+              </div>
+            </article>
+
+            <article class="details">
+              <input id="checkbox" type="checkbox"/>
+              <label for="checkbox" class="toggle">Hidden checkbox</label>
+              <div class="content">
+                <p>
+                  It's perfect! It doesn't require JavaScript, it'll work on the widest variety browsers, and it's the simplest solution that closely simulates the <span class="code">&lt;details&gt;</span> and <span class="code">&lt;summary&gt;</span> tags' functionality. Way to go!
+                </p>
+                <p>
+                  In case it wasn't obvious: This is the solution I went with <span class="emoticon">:D</span>
+                </p>
+                <p>
+                  Your Score: <span class="score">100/100</span>
+                </p>
+              </div>
+            </article>
+          </div>
+        </article>
+      </div>
+    </article>
+  </main>
+
+
   <section id="contact">
     <div class="overlay">
       <div class="containers">
