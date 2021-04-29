@@ -244,10 +244,11 @@ pre {
   color: #999;
 }
 
-/*
 .preview {
   border: 4px inset #C73;
 }
+
+/*
 .preview .details,
 .preview .active-details,
 .preview .hover-details {
